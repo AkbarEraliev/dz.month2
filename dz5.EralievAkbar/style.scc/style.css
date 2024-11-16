@@ -1,0 +1,119 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+ }
+ 
+ body {
+	background-color: #B0BEC5;
+	padding: 20px;
+ }
+ 
+ .todo {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 710px;
+	margin: 0 auto;
+ }
+ 
+ input {
+	border: none;
+	outline: none;
+	font-size: 20px;
+	height: 40px;
+	width: 500px;
+	padding-left: 5px;
+	border-radius: 5px;
+	background-color: #fff;
+ }
+ 
+ #create_button {
+	width: 200px;
+	height: 40px;
+	border: none;
+	cursor: pointer;
+	font-size: 22px;
+	border-radius: 5px;
+	background-color: #fff;
+	color: #000000;
+ }
+ 
+ #todo_list {
+	margin: 0 auto;
+	width: 750px;
+ }
+ 
+ .block_text {
+	width: 100%;
+	padding: 8px;
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+	background-color: #fff;
+	border-radius: 5px;
+ }
+
+ .block_btn {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+ }
+ 
+ .delete_button {
+	width: 100px;
+	height: 20px;
+	border: 2px solid white;
+	cursor: pointer;
+	background: #B0BEC5;
+	font-size: 14px;
+	border-radius: 10px;
+	color: white;
+	text-align: center;
+	border: 1px solid black;
+ }
+ .delete_button:hover{
+	background-color: #FF0000;
+	transition: .3s;
+	border: 1px solid #FF0000;
+ }
+ 
+ .edit_button {
+	background: #B0BEC5;
+	width: 100px;
+	height: 20px;
+	border: 2px solid white;
+	cursor: pointer;
+	font-size: 14px;
+	border-radius: 10px;
+	color: white;
+	text-align: center;
+	border: 1px solid black;
+ }
+ .edit_button:hover{
+	background-color: #FFEB3B;
+	color: black;
+	transition: .3s;
+	border: 1px solid #FFEB3B;
+ }
+ 
+ h3 {
+	font-size: 28px;
+	font-family: "Franklin Gothic Heavy";
+ }
+ 
+ .buttons_div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 320px;
+ }
+ 
+ span {
+	display: block;
+	width: 50px;
+	height: 50px;
+	border: 1px solid;
+	border-radius: 50%;
+ }
+ 
