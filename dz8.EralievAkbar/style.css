@@ -1,0 +1,71 @@
+canvas{
+	display: block;
+	margin: 0 auto;
+}
+
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	background-color: aquamarine;
+}
+
+.modal {
+	width: 500px;
+	height: 300px;
+	position: absolute;
+	border-radius: 30px;
+	background-color: rgb(72, 151, 15);
+	display: flex;
+	top: 50%;
+	left: 50%;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-around;
+	transform: translate(-50%, -50%);
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+	opacity: 0;
+	animation: modalIn 0.3s forwards;
+	border: .5px solid white;
+}
+
+@keyframes modalIn {
+	0% {
+	  opacity: 0;
+	  transform: translate(-50%, -50%) scale(0.3);
+	}
+	100% {
+	  opacity: 1;
+	  transform: translate(-50%, -50%) scale(1);
+	}
+ }
+
+.restart_button{
+	padding: 15px 20px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	border: .5px solid white;
+	background-color: rgba(76, 155, 76, 0.716);
+	color: white;
+	font-size: 16px;
+}
+
+.restart_button:hover {
+	background-color: green;
+}
+
+.text{
+	text-align: center;
+	font-size: 30px;
+	color: white;
+	text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.point{
+	font-size: 50px;
+	margin-bottom: 40px;
+	margin-top: 10px;
+	color: rgb(224, 55, 55);
+	text-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
